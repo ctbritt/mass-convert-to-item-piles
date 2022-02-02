@@ -1,7 +1,7 @@
 let corpses = canvas.tokens.placeables.filter(function (target) {
   return (
-	target?.actor?.data?.data?.attributes?.hp?.value == 0 &&
-	target?.actor?.data?.type == "npc"
+	target?.actor?.data?.data?.attributes?.hp?.value <= 0 &&
+	target?.actor?.data?.type == "npc" // adjust paths for your particular system
   );
 });
 
